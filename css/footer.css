@@ -1,0 +1,144 @@
+footer {
+    height: auto;
+    background-color: black;
+    color: rgb(151, 151, 151);
+    font-size: 13px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul,
+footer p {
+    line-height: 18px;
+}
+
+.company-name {
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+footer h2 {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.company-contact {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.company-others {
+    display: flex;
+    flex-direction: row;
+}
+
+.company-others ul {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0px;
+    padding-left: 20px;
+}
+
+.company-others ul:nth-child(1),
+.company-others ul:nth-child(2),
+.company-others ul:nth-child(3) {
+    flex: 33.3%;
+}
+
+.company-others-menu {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.company-others-menu:hover {
+    color: white;
+}
+
+@media only screen and (min-width: 769px) {
+.company-others ul:nth-child(3) {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.company-contact,
+.company-others,
+.company-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 30vh;
+    flex-direction: row;
+}
+
+    footer ul,
+    footer p {
+    line-height: 22px;
+    }
+
+    .company-name {
+        display: flex;
+        flex-direction: column;
+        flex: 35%;
+    }
+    
+    footer h2 {
+        padding-right: 70px;
+        margin-bottom: 20px;
+    }
+    
+    .company-contact {
+        display: flex;
+        flex: 25%;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    .company-others {
+        display: flex;
+        flex-direction: row;
+        flex: 40%;
+    }
+
+    .company-others ul {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .company-name {
+        flex: 30%;
+        align-items: center;
+    }
+    
+    .company-contact {
+        flex: 30%;
+        justify-content: center;
+    }
+    
+    .company-others {
+        display: flex;
+        flex-direction: row;
+        flex: 40%;
+    }
+    
+    .company-others ul:nth-child(1),
+    .company-others ul:nth-child(2) {
+        flex: 25%;
+    }
+}
+  

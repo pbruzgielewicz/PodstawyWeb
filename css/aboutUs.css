@@ -1,0 +1,38 @@
+.about-us {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 0 1% 0;
+}
+
+.text-about-us {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+}
+
+.text-about-us h2 {
+    font-size: 27px;
+    font-weight: 500;
+} 
+
+.about-us-paragraphs {
+    color: rgb(150, 149, 149);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-us-signature {
+    width:min-content;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 769px) {
+    .text-about-us {
+        width: 610px;
+    }
+} 

@@ -1,0 +1,147 @@
+.contact {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-text h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.contact-text p {
+    color: rgb(150, 149, 149);
+    font-size: 15px;
+    font-weight: 500;
+    width: 65%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(150, 149, 149);
+}
+
+.user-data-input input,
+.title-input input,
+.comment-input textarea {
+    font-size: 12px;
+    color: black;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.user-data-input input::placeholder,
+.title-input input::placeholder,
+.comment-input textarea::placeholder {
+    border: none;
+}
+
+.user-data-input {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.user-data-input input {
+    height: 40px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 15px 0 15px;
+}
+
+.user-data-input input[type='email'] {
+    margin-left: 20px;
+}
+
+.title-input,
+.comment-input {
+    width: 80%;
+}
+
+.title-input input {
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px 0 15px;
+}
+
+.comment-input textarea {
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px 0 15px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.user-data-input input:focus,
+.title-input input:focus,
+.comment-input textarea:focus {
+    outline: none;
+  }
+  
+.send-message-button {
+  font-size: 10px;
+  color: white;
+  background-color: rgb(0, 199, 199);
+  border: none;
+  width: 146px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 80px;
+  transition: opacity 0.15s, box-shadow 0.15s;
+}
+
+.send-message-button:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px rgb(0,0,0,0.15);
+}
+
+@media only screen and (max-width: 480px) {
+    .user-data-input {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .user-data-input input {
+        height: 40px;
+        width: 100%;
+    }
+    .user-data-input input[type='email'] {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .contact-text p {
+        width: 500px;
+        line-height: 20px;
+    }
+
+    .user-data-input {
+        width: 620px;
+    }
+
+    .user-data-input input {
+        width: 350px;
+    }
+
+    .title-input, 
+    .comment-input {
+        width: 620px;
+    }
+  }

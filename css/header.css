@@ -1,0 +1,156 @@
+header{
+    font-size: 23px;
+    font-weight: 700;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    z-index: 100;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+header img {
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    background-color: white;
+    transition: top .5s .2s ease-in-out;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    padding-bottom: 30px;
+}
+
+.hamburger{
+    position: relative;
+    width: 25px;
+    height:25px;
+    cursor: pointer;
+    z-index:10;
+    margin-right:50px;
+    
+}
+
+.hamburger span {
+	display:block;
+	height:3px;
+	width:100%;
+	background-color: black;
+	position:absolute;
+	left:0;
+	top:0;
+	transition:background-color 0.15s;
+    transition: transform  .3s .2s ease-in-out;
+}
+
+.hamburger:hover span {
+	background-color: rgb(26, 221, 221);
+}
+
+.hamburger span:nth-of-type(2) {
+	top:10px;
+    transition: opacity .1s .25s ease-in-out;
+}
+
+.hamburger span:nth-of-type(3) {
+	top:20px;
+}
+
+.hamburger--active span:nth-of-type(2) { 
+	opacity:0;
+    transition: opacity .1s .1s ease-in-out;
+}
+
+
+.hamburger--active span:nth-of-type(1) { 
+	transform:translateY(10px) rotate(45deg) ;
+}
+
+
+.hamburger--active span:nth-of-type(3) { 
+	transform: translateY(-10px) rotate(-45deg);
+}
+
+ .nav--active{
+    top: -1000px;
+    transition: top  .5s .2s ease-in-out;
+ }
+
+.menu-each-element {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.menu-each-element:hover {
+    color: rgb(26, 221, 221);
+}
+
+@media only screen and (min-width: 1025px) {
+    header {
+        font-size: 13px;
+    }
+
+    header img {
+    align-self: auto;
+    }
+
+     header nav {
+        height: auto;
+        position: static;
+     }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        list-style-type: none;
+        justify-content: right;
+    }
+
+    header nav ul li{
+        padding-bottom: 0px;
+    }
+    
+    header nav ul li {
+        margin-right: 40px;
+        letter-spacing: 1.5px;
+    }
+
+    header nav ul li:last-child {
+        margin-right: 50px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+  } 

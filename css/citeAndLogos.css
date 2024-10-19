@@ -1,0 +1,91 @@
+.cite {
+    background-color: rgb(0, 199, 199);
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+}
+
+.cite cite {
+    font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.cite p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+    .cite {
+        height: 22vh;
+    }
+    
+    .cite cite {
+        font-size: 20px;
+        width: 650px;
+    }
+} 
+
+.logos {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 30px 20px 30px;
+    
+}
+
+.each-logo {
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.each-logo:last-child {
+    display: none;
+}
+
+.each-logo:nth-child(4) {
+    margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 481px) {
+    .each-logo {
+        flex: 50%
+    }
+
+    .each-logo:nth-child(3) {
+        margin-bottom: 0px;
+    }
+} 
+
+@media only screen and (min-width: 769px) {
+    .logos {
+        height: 20vh;
+    }
+
+    .each-logo {
+        flex: 25%;
+        margin-bottom: 0px;
+    }
+} 
+
+@media only screen and (min-width: 1025px) {
+    .each-logo {
+        flex: 20%
+    }
+    
+    .each-logo:last-child {
+        display: flex;
+    }
+} 
